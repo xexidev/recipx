@@ -1,0 +1,20 @@
+.loading-component {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  & .loading-component-animation {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .loading-component-title {
+    text-align: center;
+  }
+
+  & .loading-component-text {
+    text-align: center;
+    color: var(--color-black-light);
+    font-size: 80%;
+  }
+}

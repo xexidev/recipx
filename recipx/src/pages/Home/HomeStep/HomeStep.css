@@ -1,0 +1,75 @@
+.step {
+  max-width: 33%;
+  width: 100%;
+
+  & .step-image {
+    border-radius: 20px;
+    margin-bottom: 10px;
+    aspect-ratio: 1;
+    line-height: 0;
+    
+    & img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &.step-1 {
+    & .step-text-number {
+      color: var(--color-orange);
+    }
+    & .step-dot {
+      color: var(--color-orange);
+    }
+  }
+
+  &.step-2 {
+    & .step-text-number {
+      color: var(--color-turquoise);
+    }
+    & .step-dot {
+      color: var(--color-turquoise);
+    }
+  }
+
+  &.step-3 {
+    & .step-text-number {
+      color: var(--color-blue);
+    }
+    & .step-dot {
+      color: var(--color-blue);
+    }
+  }
+}
+@media (width <= 640px) {
+  .home-welcome-steps {
+    flex-direction: column;
+
+    & .step {
+      display: flex;
+      max-width: 100%;
+      flex-direction: row;
+      gap: 20px;
+
+      & .step-image {
+        width: 40%;
+        border-width: 10px;
+      }
+
+      & .step-text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & .step-text-number {
+          font-size: 200%;
+        }
+
+        & .step-text-text {
+          display: block;
+        }
+      }
+    }
+  }
+}

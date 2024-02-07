@@ -1,0 +1,20 @@
+.footer {
+  height: var(--footer-height);
+  background-color: var(--color-grey-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  & > a {
+    color: var(--color-black-light);
+    font-family: 'defaultMEdium';
+    font-size: 10px;
+    transition: color linear 150ms;
+
+    &:hover {
+      color: var(--color-blue);
+      transition: color linear 150ms;
+    }
+  }
+}

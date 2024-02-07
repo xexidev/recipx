@@ -1,0 +1,14 @@
+.formCard {
+  padding: 30px 40px 40px;
+  border-radius: 10px;
+  max-width: 380px;
+  width: 100%;
+  border: 1px solid var(--color-yellow);
+  box-shadow: var(--shadow-card);
+  background-color: white;
+}
+@media (width < 640px) {
+  .formCard {
+    max-width: 640px;
+  }
+}

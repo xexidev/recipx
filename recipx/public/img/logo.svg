@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7DC81B;stroke:url(#SVGID_1_);stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-482" y1="-511.5" x2="-245" y2="-511.5">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+<rect x="-481.5" y="-629.5" class="st0" width="236" height="236"/>
+<g>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="131.5251" y1="182.9959" x2="963.3159" y2="765.6512">
+		<stop  offset="0" style="stop-color:#FB8138"/>
+		<stop  offset="1" style="stop-color:#7DC81B"/>
+	</linearGradient>
+	<path class="st1" d="M509.97,406.18c-5.65,2.61-10.67,6.6-14.52,11.76c-8.34,11.17-9.9,26-4.06,38.66l139.8,303.06
+		c5.84,12.66,18.14,21.1,32.05,22c6.43,0.42,12.73-0.81,18.38-3.41c6.57-3.03,12.25-7.92,16.24-14.26l163.01-258.97
+		c6.85-10.88,7.73-24.49,2.35-36.16c-5.39-11.67-16.31-19.83-29.03-21.69l-302.81-44.09C523.95,402.01,516.54,403.16,509.97,406.18z
+		"/>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="102.1615" y1="224.915" x2="933.9522" y2="807.5704">
+		<stop  offset="0" style="stop-color:#FB8138"/>
+		<stop  offset="1" style="stop-color:#7DC81B"/>
+	</linearGradient>
+	<path class="st2" d="M936.11,225.19C777.7-9.01,459.4-70.47,225.17,87.93S-70.52,564.6,87.89,798.81s476.71,295.66,710.94,137.26
+		S1094.52,459.4,936.11,225.19z M511.95,103.99c58.92,0,114.93,12.49,165.52,34.95L327.42,300.38L272.59,181.5
+		C339.83,132.74,422.53,103.99,511.95,103.99z M191.08,259.81l39.34,85.3l-109.85,50.66C135.43,345.77,159.6,299.78,191.08,259.81z
+		 M103.84,521.1l171.32-79.01l220.44,477.92C280.69,911.55,108.48,736.96,103.84,521.1z M608.13,908.93L372.16,397.36l411.53-189.79
+		c83.74,74.75,136.47,183.51,136.47,304.59C920.16,704.46,787.16,865.7,608.13,908.93z"/>
+</g>
+</svg>

@@ -1,0 +1,96 @@
+.pantry {  
+  --cell-padding: 10px 20px;
+
+  & .pantry-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    & .pantry-list {
+      list-style: none;
+      width: 100%;
+      max-width: 640px;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid var(--color-grey);
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: var(--shadow-card);
+  
+      & .pantry-list-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 1px solid var(--color-grey);
+        border-right: 1px solid var(--color-grey);
+  
+        &:last-child {
+          border-radius: 0px 0px 10px 10px;
+        }
+  
+        &:nth-child(2n + 2) {
+          background-color: var(--color-grey-light);
+        }
+  
+        &:nth-child(2n + 1) {
+          background-color: white
+        }
+  
+        & > * {
+          padding: var(--cell-padding);
+        }
+  
+        & .pantry-list-item-data {
+          width: calc(100% - 90px);
+        }
+  
+        & .pantry-list-item-data-name {
+          font-size: 90%;
+          margin: 0;
+          font-family: 'defaultMedium';
+          font-weight: normal;
+        }
+  
+        & .pantry-list-item-data-brand {
+          font-size: 80%;
+          text-transform: capitalize;
+          color: var(--color-black-light);
+        }
+        & .pantry-list-item-remove {
+          width: 90px;
+          text-align: right;
+  
+          & button {
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+            line-height: 0;
+          }
+        }
+      }
+    }
+    & .pantry-list-heading {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px 10px 0px 0px;
+      background-color: var(--color-black-light);
+  
+      & > h2 {
+        padding: var(--cell-padding);
+        font-size: 90%;
+        font-family: 'defaultMedium';
+        margin: 0;
+        color: white;
+        font-weight: normal;
+      }
+  
+      & .pantry-list-heading-name {
+        width: calc(100% - 90px);
+      }
+  
+      & .pantry-list-heading-remove {
+        width: 90px;
+      }
+    }
+  }
+}

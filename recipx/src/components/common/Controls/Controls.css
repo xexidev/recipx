@@ -1,0 +1,25 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+  & .controls-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+
+    & > * {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (width < 640px) {
+  .controls {
+  
+    & .controls-content {
+      width: 100%;
+    }
+  }
+}

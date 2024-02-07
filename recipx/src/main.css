@@ -1,0 +1,197 @@
+/*
+Small screen: 640px
+Medium screen: 1007px
+*/
+
+@font-face {
+  font-family: 'defaultRegular';
+  src: url(/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: 'defaultMedium';
+  src: url(/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: 'defaultBold';
+  src: url(/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: 'defaultBlack';
+  src: url(/fonts/Raleway-ExtraBold.ttf);
+}
+:root {
+  --color-black: #333333;
+  --color-black-light: #666666;
+  --color-grey: #dddddd;
+  --color-grey-light: #eeeeee;
+  
+  --color-turquoise: #a1c1bd;
+  --color-blue: #87bcdb;
+  --color-pink: #f28f8d;
+  --color-red: #f37174;
+  --color-orange: #f39e3a;
+  --color-yellow: #f8d656;
+  --color-purple: #884e91;
+  --color-brown: #5e433f;
+  
+  --color-turquoise-hover: #6bbfb5;
+  --color-blue-hover: #69bbeb;
+  --color-pink-hover: #f3605e;
+  --color-red-hover: #f0484b;
+  --color-orange-hover: #f58d16;
+  --color-yellow-hover: #e4ba21;
+  --color-purple-hover: #763c82;
+  --color-brown-hover: #51302d;
+
+  --padding-card: 30px 40px 40px;
+  --radius-card: 10px;
+  --shadow-card: 0px 5px 10px var(--color-grey);
+  
+  --header-height: 80px;
+  --footer-height: 30px;
+  --mobile-menu-height: 70px;
+  --max-width: 1280px;
+}
+@media (width > 640px) {
+  :root {
+    --main-min-height: calc(100vh - var(--footer-height) - var(--header-height));
+  }
+}
+@media (width < 640px) {
+  :root {
+    --main-min-height: calc(100vh - var(--footer-height) - var(--header-height) - var(--mobile-menu-height));
+  }
+}
+* {
+  box-sizing: border-box;
+  color: var(--color-black);
+  line-height: 1.4;
+}
+body {
+  margin: 0;
+  font-family: 'defaultRegular';
+  overflow-x: hidden;
+}
+input {
+  font-family: 'defaultRegular';
+}
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-grey);
+  width: 100%;
+  font-family: 'defaultRegular';
+}
+a {
+  text-decoration: none;
+  color: var(--color-blue-hover);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'defaultBold';
+  font-weight: normal;
+  margin: 0;
+}
+strong {
+  font-family: 'defaultBold';
+  font-weight: normal;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1280px;
+}
+
+.text-turquoise {
+  color: var(--color-turquoise);
+}
+.text-blue {
+  color: var(--color-blue);
+}
+.text-pink {
+  color: var(--color-pink);
+}
+.text-red {
+  color: var(--color-red);
+}
+.text-orange {
+  color: var(--color-orange);
+}
+.text-yellow {
+  color: var(--color-yellow);
+}
+.text-purple {
+  color: var(--color-purple);
+}
+.text-brown {
+  color: var(--color-brown);
+}
+
+.button-turquoise {
+  color: white;
+  background-color: var(--color-turquoise);
+}
+.button-blue {
+  color: white;
+  background-color: var(--color-blue);
+}
+.button-pink {
+  color: white;
+  background-color: var(--color-pink);
+}
+.button-red {
+  color: white;
+  background-color: var(--color-red);
+}
+.button-orange {
+  color: white;
+  background-color: var(--color-orange);
+}
+.button-yellow {
+  color: white;
+  background-color: var(--color-yellow);
+}
+.button-purple {
+  color: white;
+  background-color: var(--color-purple);
+}
+.button-brown {
+  color: white;
+  background-color: var(--color-brown);
+}
+.button-white {
+  color: var(--color-black-light);
+  background-color: white;
+}
+
+.button-turquoise:hover {
+  background-color: var(--color-turquoise-hover);
+}
+.button-blue:hover {
+  background-color: var(--color-blue-hover);
+}
+.button-pink:hover {
+  background-color: var(--color-pink-hover);
+}
+.button-red:hover {
+  background-color: var(--color-red-hover);
+}
+.button-orange:hover {
+  background-color: var(--color-orange-hover);
+}
+.button-yellow:hover {
+  background-color: var(--color-yellow-hover);
+}
+.button-purple:hover {
+  background-color: var(--color-purple-hover);
+}
+.button-brown:hover {
+  background-color: var(--color-brown-hover);
+}

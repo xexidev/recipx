@@ -1,0 +1,26 @@
+.content-header {  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  text-align: center;
+
+  & > h1 {
+    font-size: 40px;
+    font-family: 'defaultBlack';
+  }
+
+  & > svg {
+    width: 80px;
+    height: 80px;
+    stroke: var(--color-pink);
+  }
+}
+@media (width < 640px) {
+  .content-header {    
+    text-align: left;
+
+    & > h1 {
+      font-size: 30px;
+    }
+  }
+}

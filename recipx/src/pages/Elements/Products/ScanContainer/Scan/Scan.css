@@ -1,0 +1,41 @@
+.scan {
+  & .scan-content {
+    text-align: center;
+
+    & .scan-content-camera-controls {
+      margin: 20px 0;
+
+      & .scan-content-camera-controls-select {
+        max-width: 640px;
+      }
+    }
+
+    & .scan-content-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  & .video {
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    max-height: 480px;
+    border-radius: 15px;
+
+    &.off {
+      display: none;
+    }
+  }
+}
+@media (width < 640px) {
+  .scan {
+    & .scan-content {  
+      & .scan-content-camera-controls {
+        & > label {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

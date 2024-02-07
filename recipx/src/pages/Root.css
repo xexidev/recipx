@@ -1,0 +1,13 @@
+@media (width > 1007px) {
+  .root {
+    background-image: url('./img/bg_right.jpg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+.main {
+  min-height: var(--main-min-height);
+  display: flex;
+  align-items: center;
+}

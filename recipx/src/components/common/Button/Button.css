@@ -1,0 +1,26 @@
+.button-component {
+  cursor: pointer;
+  font-family: 'defaultRegular';
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 0px;
+  transition: background-color linear 150ms;
+}
+.button-component:hover {
+  transition: background-color linear 150ms;
+}
+.form-button {
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-family: 'defaultRegular';
+  color: white;
+  background-color: var(--color-orange);
+}
+.form-button:hover {
+  background-color: var(--color-orange-hover);
+}

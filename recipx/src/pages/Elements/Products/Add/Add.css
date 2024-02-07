@@ -1,0 +1,23 @@
+.add {
+  & .add-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    & .add-buttons-button {
+      width: calc(100% / 2);
+    }
+
+  }
+}
+@media (width <= 1070px) {
+  .add {  
+    & .add-buttons {
+      flex-direction: column;
+
+      & .add-buttons-button {
+        width: 100%;
+      }
+    }
+  }
+}

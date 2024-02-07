@@ -1,0 +1,23 @@
+.home-logged {
+  & .home-logged-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    & .home-logged-button {
+      width: calc(100% / 3);
+    }
+
+  }
+}
+@media (width <= 1070px) {
+  .home-logged {  
+    & .home-logged-buttons {
+      flex-direction: column;
+
+      & .home-logged-button {
+        width: 100%;
+      }
+    }
+  }
+}

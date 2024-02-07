@@ -1,0 +1,35 @@
+.content-notification {
+  display: flex;
+  justify-content: center;
+
+  & .content-notification-card {
+    width: 100%;
+    max-width: 360px;
+    box-shadow: var(--shadow-card);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+
+    & > svg {
+      stroke: var(--color-red);
+    }
+
+    & .content-notification-card-title {
+      font-size: 20px;
+      margin: 0px 0px 10px 0px;
+    }
+
+    & .content-notification-card-text {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+}
+@media (width < 640px) {
+  .content-notification {
+    & .content-notification-card {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+}

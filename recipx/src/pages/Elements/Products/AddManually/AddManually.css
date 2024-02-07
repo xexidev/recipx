@@ -1,0 +1,9 @@
+.add-manually-form-container {
+  display: flex;
+  justify-content: center;
+
+  & > form {
+    max-width: 640px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+.input-container {
+  margin-bottom: 15px;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-grey);
+  width: 100%;
+}
+input:focus {
+  outline: 1px solid var(--color-blue);
+  border-color: white;
+}
+label {
+  font-family: 'defaultMedium';
+}
+label:not([for="show-password"]) {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 90%;
+}
+input[type="checkbox"] {
+  width: auto;
+  margin: 0 5px 2px 0;
+  border: 0;
+  outline: 0;
+}
+input[type="checkbox"] + label {
+  display: inline-block;
+  font-size: 80%;
+}
+input.has-bullet {
+  padding-right: 3rem;
+}
+.input-info-container {
+  display: inline-block;
+  position: relative;
+}
+.input-info-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -2rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  color: white;
+  line-height: 1.2;
+}
+.input-info-text {
+  display: none;
+  position: absolute;
+  min-width: 300px;
+  right: 0;
+  margin-top: 1rem;
+  background-color: var(--color-pink);
+  color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 7px;
+  font-size: 90%;
+}
+.input-info-bullet:hover + .input-info-text {
+  display: block;
+}
+.input-onfocus-info {
+  display: none;
+}
+input:focus ~ .input-onfocus-info {
+  display: block;
+}
+.show-password-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.validation-message {
+  font-size: 80%;
+  margin-top: 5px;
+  color: var(--color-red);
+}

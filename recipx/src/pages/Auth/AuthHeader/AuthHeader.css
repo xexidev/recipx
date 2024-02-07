@@ -1,0 +1,25 @@
+.auth-header {
+  border-bottom: 1px solid var(--color-pink);
+  margin-bottom: 20px;
+
+  &.has-description {
+    padding-bottom: 20px;
+  }
+
+  & h1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    font-size: 125%;
+
+    & svg {
+      stroke: var(--color-red);
+    }
+  }
+
+  & .auth-header-description {
+    color: var(--color-black-light);
+    font-size: 85%;
+  }
+}

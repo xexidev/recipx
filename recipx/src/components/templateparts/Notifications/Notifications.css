@@ -1,0 +1,26 @@
+.top-notification {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: -200px;
+  background-color: var(--color-blue-hover);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+  transition: top 500ms ease-in-out;
+}
+.top-notification.error {
+  background-color: var(--color-red-hover);
+}
+.top-notification.visible {
+  transition: top 500ms ease-in-out;
+  top: 0;
+}
+.top-notification .close {
+  position: absolute;
+  color: white;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
