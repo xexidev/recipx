@@ -224,7 +224,7 @@ export default function GetRecipe () {
               className='get-recipe-no-credits'
               icon={<Frown />}
               title='No te quedan créditos'
-              text='Has agotado todos los créditos para generar recetas esta semana. Cada lunes tu cuenta se recarga con 25 créditos.'
+              text='Has agotado todos los créditos para generar recetas esta semana. Cada lunes tu cuenta volverá a tener 15 créditos.'
             />
           }
       </div>

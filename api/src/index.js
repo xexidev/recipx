@@ -60,7 +60,7 @@ const addUserToUsage = async (userId, userEmail) => {
           user_id: userId,
           user_email: userEmail,
           premium: false,
-          credits: 25,
+          credits: 15,
           last_recharge: timestamptz
         }
       ])
@@ -116,36 +116,33 @@ const setNewCredits = async (userId, newCredits) => {
 
 // CRON Recharge credits every week
 const rechargeCredits = new cron.CronJob('0 0 * * MON', async () => {
-  const dateNow = Date.now()
   const timestamptz = new Date().toISOString()
-  const milisecondWeek = 604800000
-  console.log('ejecutanto')
+  console.log(`Ejecutando en ${timestamptz}`)
   try {
     const { data, error } = await supabase
       .from('Usage')
       .select('*')
-      if (data) {
-          data.forEach(async user => {
-          const lastRechargeDate = Date.parse(user.last_recharge)
-          if ((dateNow - lastRechargeDate) > milisecondWeek) {          
-            try {
-              const { data, error } = await supabase
-                .from('Usage')
-                .update({ credits: 25, last_recharge: timestamptz })
-                .eq('user_id', user.user_id)
-                .select()
-              if (data) {
-                console.log(`Créditos para ${user.user_id} actualizados`)
-              }
-              if (error) {
-                console.log(`Fallo al asignar créditos para ${user.user_id}. ${error}`)
-              }
-            } catch (error) {
+    if (data) {
+      data.forEach(async user => {
+        if (user.credits < 15) {
+          try {
+            const { data, error } = await supabase
+              .from('Usage')
+              .update({ credits: 15, last_recharge: timestamptz })
+              .eq('user_id', user.user_id)
+              .select()
+            if (data) {
+              console.log(`Créditos para ${user.user_id} actualizados`)
+            }
+            if (error) {
               console.log(`Fallo al asignar créditos para ${user.user_id}. ${error}`)
             }
+          } catch (error) {
+            console.log(`Fallo al asignar créditos para ${user.user_id}. ${error}`)
           }
-        }) 
-      }
+        }
+      })
+    }
     if (error) {
       console.log(`Fallo al obtener usuarios. ${error}`)
     }
