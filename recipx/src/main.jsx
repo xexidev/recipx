@@ -1,7 +1,7 @@
 import './main.css'
 import ReactDOM from 'react-dom/client'
 import Root from './pages/Root.jsx'
-import ErrorPage from './ErrorPage.jsx'
+import ErrorPage from './pages/ErrorPage/ErrorPage.jsx'
 import Home from './pages/Home/Home.jsx'
 // Private Route
 import PrivateRoutes from './pages/PrivateRoutes/PrivateRoutes.jsx'
