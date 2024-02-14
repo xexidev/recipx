@@ -211,7 +211,7 @@ app.get("/recipe", async (req, res) => {
         // OpenAI Query
         const completion = await openai.chat.completions.create({
           messages: [{ role: 'user', content: query }],
-          model: 'gpt-3.5-turbo-1106'
+          model: 'gpt-3.5-turbo'
         })
         const response = completion.choices[0].message.content
 
