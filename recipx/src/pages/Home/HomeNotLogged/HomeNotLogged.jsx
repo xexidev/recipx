@@ -21,6 +21,14 @@ export default function HomeNotLogged () {
         Cocina <strong>deliciosas recetas</strong> con lo que tienes en casa. Sin salir a comprar, sin tener que buscar y al instante.
         <br/>
         <strong>¿Te apetece?</strong>
+        <br/>
+        <br/>
+        <div className='home-welcome-description-test'>
+          <h3 className='home-welcome-description-test-title'>Prueba Recipx con las siguientes credenciales:</h3>
+          <strong>Email:</strong> recipx@xexi.es
+          <br/>
+          <strong>Pass:</strong> Recipx1234
+        </div>
       </div>
       <div className='home-welcome-buttons'>
         <LinkButton className='button-pink' to={paths.userLogin}>Entrar</LinkButton>

@@ -39,6 +39,7 @@ export default function Login () {
         <AuthHeader
           icon={<KeyRound strokeWidth={3} />}
           title='Iniciar sesión'
+          description='Pruébame sin tener que registrarte con: recipx@xexi.es - Recipx1234'
         />
         <form id="form" onSubmit={handleSubmit}>
             <Input

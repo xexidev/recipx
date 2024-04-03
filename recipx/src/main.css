@@ -43,6 +43,8 @@ Medium screen: 1007px
   --color-purple-hover: #763c82;
   --color-brown-hover: #51302d;
 
+  --color-turquoise-light: #edf8f7;
+
   --padding-card: 30px 40px 40px;
   --radius-card: 10px;
   --shadow-card: 0px 5px 10px var(--color-grey);
